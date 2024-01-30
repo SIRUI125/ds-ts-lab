@@ -4,8 +4,6 @@ interface Friend {
     age: number;
   }
   
-  // (Optional) Change the names below to your friends.
-  
   const friend1: Friend = {
     name: "Paul Fleming",
     phone: "087-12345",
@@ -23,13 +21,15 @@ interface Friend {
   
   // -------------------
   
+  interface ColleagueContact {
+    email: string;
+    extension: number;
+  }
+  
   interface Colleague {
     name: string;
     department: string;
-    contact: {
-      email: string;
-      extension: number;
-    };
+    contact: ColleagueContact;
   }
   
   const colleague1: Colleague = {
